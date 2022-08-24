@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw 30vw ;
+    grid-template-rows: 20vh 20vh 20vh 20vh ;
+    gap: 30px;
+    grid-template-areas: 
+    "nav nav nav "
+    "section section aside"
+    "section section aside"
+    "section-2 section-2 aside"
+    "section-2 section-2 aside";
+}
+
+nav{
+    grid-area: nav;
+    background-color: aqua;
+}
+
+section{
+    grid-area: section;
+    background-color: black;
+}
+
+aside{
+    grid-area: aside;
+    background-color: purple;
+}
+
+.section-2{
+    grid-area: section-2;
+    background-color: gray;
+}

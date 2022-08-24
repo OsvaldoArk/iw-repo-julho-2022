@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form  id="formulario" action="destino.html" method="get">
+        <fieldset>
+            <legend>Dados pessoais:</legend>
+            
+            <label>
+                nome:
+                <input type="text" name="nome" placeholder="ex: Antônio da Silva">
+            </label><br><br>
+            <label>
+                data do nascimento:
+                <input type="date" name="dataDeNascimento">
+            </label><br><br>
+            <label>
+                idade:
+                <input type="number" name="nome">
+            </label><br><br>
+            <span>estado cívil: </span>
+            <label>
+                <input type="radio" name="estadocivil" id="" checked>
+                solteiro(a)
+            </label>
+            <label>
+                <input type="radio" name="estadocivil" id="">
+                união estável
+            </label>
+            <label>
+                <input type="radio" name="estadocivil" id="">
+                casado(a)
+            </label>
+            <label>
+                <input type="radio" name="estadocivil" id="">
+                divorciado(a)
+            </label>
+            <label>
+                <input type="radio" name="estadocivil" id="">
+                viúvo(a)
+            </label><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados adicionais</legend>
+
+            <label>
+                e-mail:
+                <input type="email" name="nome">
+            </label><br><br>
+            
+            <label>
+                senha:
+                <input type="password" name="nome">
+            </label><br><br>
+            <label>
+                grau de instrução:
+                <select name="ensino" id="ensino">
+                    <option value="0" disabled selected>Escolha o nível de ensino</option>
+                    <option value="fundamental">Fundamental</option>
+                    <option value="medio">Médio</option>
+                    <option value="superiorIn">Superior incompleto</option>
+                    <option value="superiorCom">Superior completo</option>
+                </select>
+            </label>
+            <br><br>
+            <span>Conhecimentos: </span><br>
+            <label>
+                <input type="checkbox" name="" id="">
+                HTML
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                JAVASCRIPT
+            </label><br>
+            <label>
+                <input type="checkbox" name="" id="">
+                REACT
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                NODE
+            </label> 
+            <label>
+                <input type="checkbox" name="" id="">
+                POSTGRESQL
+            </label><br><br> 
+            <label>
+                Informações adicionais: <br>
+                <textarea name="" id="" cols="50" rows="10"></textarea>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Novas tags</legend>
+
+            <input list="paises" name="nome">
+                <datalist id="paises">
+                    <option value="Brasil">
+                    <option value="Argentina">
+                    <option value="Chile">
+                    <option value="Paraguay">
+                </datalist>
+            <br><br>
+            <span class="tagdebloco"> nível de conhecimento </span> <br>
+            <label>
+                HTML
+                <meter value="80" min="0" max="100" low="33" high="50" optimum="70"/>
+            </label>
+            <label>
+                CSS
+                <meter value="45" min="0" max="100" low="33" high="50" optimum="70">
+            </label>
+            <label>
+                JAVASCRIPT
+                <meter value="90" min="0" max="100" low="33" high="50" optimum="70">
+            </label> <br><br>
+            <label>
+                HTML
+                <input type="range" min="0" max="100" step="25">
+            </label>
+            <label>
+                CSS
+                <input type="range" >
+            </label>
+            <label>
+                JAVASCRIPT
+                <input type="range" >
+            </label>
+        </fieldset>
+        <br><br>
+        <label>progresso do formulário</label>
+        <progress max="100"></progress>
+        <progress value="37" max="100"></progress>
+        <br><br>
+        <button type="submit">ENVIAR</button>
+        <button type="reset">RESETAR</button>
+    </form>
+</body>
+</html>

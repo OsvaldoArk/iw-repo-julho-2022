@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+body {
+	font-size: 12px;
+	font-weight: bolder;
+	color: white;
+	background: rgb(23, 17, 119);
+	background: linear-gradient(90deg, rgba(23, 17, 119, 1) 15%, rgba(9, 9, 121, 1) 40%, rgba(0, 212, 255, 1) 100%);
+}
+
+header{
+	
+	padding: 0px 70px;;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 1px 5px 5px black;
+
+}
+
+#titulo{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	font-size: 2rem;
+	margin: 10px 10px 10px 30px;
+}
+
+.navegacao > li{
+	font-size: 1.5em;
+	display: inline;
+	margin-right: 20px;
+}
+
+.navegacao > li > a{
+	text-decoration: none;
+	color: white;
+}
+
+.botao-borda{
+	border: 0px solid black;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	margin-left: 20px;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botao-rosa{
+	margin-left: 0px;
+	width: 180px;
+	height: 50px;
+	color: white;
+	background-color: darkorchid;
+}
+
+.botao-branco{
+	width: 180px;
+	height: 50px;
+	color: darkorchid;
+
+}
+.acesso > button{
+	width: 100px;
+	height: 30px;
+	color: gray;
+}
+
+
+.acesso > .primary {
+	width: 130px;
+	height: 30px;
+	color: white;
+	background-color: royalblue;
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin-top: 150px;
+	padding: 0px 70px;
+}
+
+#sessao-texto{
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#sessao-titulo{
+	font-family: 'Roboto', sans-serif;
+	font-size: 4rem;
+	line-height: 4rem;
+	margin-bottom: 15px;
+
+}
+
+#sessao-texto > p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9rem;
+	line-height: 2rem;
+	margin-bottom: 20px;
+}
+

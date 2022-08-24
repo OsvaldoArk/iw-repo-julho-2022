@@ -1,0 +1,92 @@
+.container{
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 10vh 40vh 40vh 10vh ;
+    gap: 30px;
+    grid-template-areas: 
+    "nav nav nav"
+    "head head aside"
+    "section-1 section-2 aside"
+    "footer footer footer";
+}
+
+nav{
+    grid-area: nav;
+    background-color: purple;
+}
+
+header{
+    grid-area: head;
+    background-color: green;
+}
+
+aside{
+    grid-area:aside;
+    background-color: aqua;
+}
+
+.section-1{
+    grid-area: section-1;
+    background-color: violet;
+}
+
+.section-2{
+    grid-area: section-2;
+    background-color: violet;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+
+@media (max-width: 600px){
+    body{
+        background-color: black;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 33vw 33vw 33vw;
+        grid-template-rows: 100px 200px 300px 300px 300px 200px;
+        gap: 30px;
+        grid-template-areas: 
+        "nav nav nav"
+        "head head head"
+        "aside aside aside"
+        "section-1 section-1 section-1"
+        "section-2 section-2 section-2"
+        "footer footer footer";
+    }
+    
+    nav{
+        grid-area: nav;
+        background-color: purple;
+    }
+    
+    header{
+        grid-area: head;
+        background-color: green;
+    }
+    
+    aside{
+        grid-area:aside;
+        background-color: aqua;
+    }
+    
+    .section-1{
+        grid-area: section-1;
+        background-color: violet;
+    }
+    
+    .section-2{
+        grid-area: section-2;
+        background-color: violet;
+    }
+    
+    footer{
+        grid-area: footer;
+        background-color: darkgoldenrod;
+    }    
+}

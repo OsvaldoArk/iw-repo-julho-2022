@@ -1,0 +1,19 @@
+.outro-back{
+    background-color: blueviolet !important;
+}
+
+.imagem-carrossel{
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+
+.imagem-card{
+    width: 90%;
+    height: auto;
+    margin:10px;
+    object-fit: cover;
+    object-position: 0% 100%;
+    align-self: center;
+}
